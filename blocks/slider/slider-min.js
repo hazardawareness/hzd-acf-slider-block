@@ -1,0 +1,1 @@
+jQuery(document).ready((function($){const e=document.getElementsByClassName("acf-slider-block");if(null!=e){console.log(e[0]);const o=e[0].dataset.fade,c=e[0].dataset.centre;console.log(o),console.log(c),jQuery(".acf-slider-block > .acf-innerblocks-container").slick({})}}));

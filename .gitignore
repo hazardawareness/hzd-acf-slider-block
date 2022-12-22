@@ -1,0 +1,20 @@
+# -----------------------------------------------------------------
+# .gitignore for WordPress Theme
+# Bare Minimum Git
+# -----------------------------------------------------------------
+
+# ignore all files starting with .
+.*
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+!.nova/
+
+# ignore all files that start with ~
+~*
+
+# ignore node/grunt dependency directories
+node_modules/
+
+*.DS_Store
+*/.DS_Store

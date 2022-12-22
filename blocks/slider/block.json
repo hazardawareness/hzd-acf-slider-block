@@ -1,0 +1,29 @@
+{
+	"name": "acf/slider",
+	"title": "Slick Slider",
+	"description": "Display a carousel with ACF with any blocks in the slides.",
+	"style": ["file:./slick/slick.css", "file:./slick/slick-theme.css", "file:./slider.css"],
+	"script": "file:./slider.js",
+	"category": "design",
+	"icon": "images-alt2",
+	"supports": {
+		"jsx": true,
+		"align": ["wide", "full"],
+		"html": false,
+		"anchor": true,
+		"color": {
+			"text": true,
+			"background": true
+		},
+		"spacing": {
+			"margin": false,
+			"padding": false,
+			"blockGap": true
+		}
+	},
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "slider.php",
+		"blockVersion": 2
+	}
+}

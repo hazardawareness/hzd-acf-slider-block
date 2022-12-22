@@ -1,0 +1,23 @@
+{
+	"name": "acf/slide",
+	"title": "Slick Slide",
+	"description": "Display a carousel with ACF with any blocks in the slides.",
+	"style": ["file:./slide.css"],
+	"category": "design",
+	"parent": ["acf/slider"],
+	"icon": "images-alt2",
+	"supports": {
+		"jsx": true,
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"align": false,
+		"html": false
+	},
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "slide.php",
+		"blockVersion": 2
+	}
+}

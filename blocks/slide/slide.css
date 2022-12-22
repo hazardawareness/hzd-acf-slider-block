@@ -1,0 +1,31 @@
+/* Editor Styles
+-------------------------------------------------------------- */
+/* Front End Styles
+-------------------------------------------------------------- */
+.slick-slide {
+  margin: 0 calc(var(--global-boxed-spacing) / 2);
+}
+
+.slick-slide > div,
+.slick-slide .acf-slide-block,
+.slick-slide > div > div {
+  display: flex !important;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: stretch;
+  height: 100%;
+  flex-grow: 2;
+}
+
+.acf-slide-block {
+  border: solid 2px rgb(158, 228, 152);
+}
+.acf-slide-block .acf-innerblocks-container {
+  display: flex;
+  height: 100%;
+  widows: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}

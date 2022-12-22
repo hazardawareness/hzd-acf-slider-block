@@ -1,0 +1,127 @@
+/* Editor Styles
+-------------------------------------------------------------- */
+.edit-post-visual-editor {
+	--visual-padding: 20px;
+
+	.acf-slider-block {
+		border: solid 5px aquamarine;
+		padding: 20px;
+	}
+
+	.acf-innerblocks-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		max-width: 100%;
+		overflow-x: auto;
+	}
+
+	.acf-slider-block[data-slides-to-show='1'] .wp-block-acf-slide {
+		flex-basis: 100%;
+	}
+
+	.acf-slider-block[data-slides-to-show='2'] .wp-block-acf-slide {
+		margin-right: var(--visual-padding);
+		flex-basis: calc(50% - var(--visual-padding)) !important;
+		max-width: calc(50% - var(--visual-padding)) !important;
+		min-width: calc(50% - var(--visual-padding)) !important;
+	}
+
+	.acf-slider-block[data-slides-to-show='3'] .wp-block-acf-slide {
+		margin-right: var(--visual-padding);
+		flex-basis: calc(33.3333% - var(--visual-padding)) !important;
+		max-width: calc(33.3333% - var(--visual-padding)) !important;
+		min-width: calc(33.3333% - var(--visual-padding)) !important;
+	}
+
+	.acf-slider-block[data-slides-to-show='4'] .wp-block-acf-slide {
+		margin-right: var(--visual-padding);
+		flex-basis: calc(25% - var(--visual-padding)) !important;
+		max-width: calc(25% - var(--visual-padding)) !important;
+		min-width: calc(25% - var(--visual-padding)) !important;
+	}
+
+	.acf-slider-block[data-slides-to-show='5'] .wp-block-acf-slide {
+		margin-right: var(--visual-padding);
+		flex-basis: calc(20% - var(--visual-padding)) !important;
+		max-width: calc(20% - var(--visual-padding)) !important;
+		min-width: calc(20% - var(--visual-padding)) !important;
+	}
+
+	.acf-slider-block[data-slides-to-show='6'] .wp-block-acf-slide {
+		margin-right: var(--visual-padding);
+		flex-basis: calc(16.66666667% - var(--visual-padding)) !important;
+		max-width: calc(16.66666667% - var(--visual-padding)) !important;
+		min-width: calc(16.66666667% - var(--visual-padding)) !important;
+	}
+}
+
+/* Front End Styles
+-------------------------------------------------------------- */
+
+.acf-slider-block {
+	border: solid 4px grey;
+
+	.slick-track {
+		display: flex !important;
+	}
+
+	.slick-slide {
+		height: inherit !important;
+	}
+}
+
+/* Slider Arrows
+-------------------------------------------------------------- */
+
+.acf-slider-block .slick-arrow {
+	width: 28px;
+	height: 28px;
+
+	&::before {
+		background-image: url('../../images/slider-arrow.svg');
+		background-color: var(--arrow-colour);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-blend-mode: color;
+		content: '';
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		position: absolute;
+	}
+
+	&.slick-prev::before {
+		transform: rotate(180deg);
+	}
+}
+
+/* Slider Dots
+-------------------------------------------------------------- */
+
+.acf-slider-block .slick-dots li {
+	button {
+		border-radius: 0;
+		height: 8px;
+		width: 20px;
+		padding: 0;
+		border: solid 1px var(--dots-colour);
+
+		&:before {
+			content: '';
+			line-height: 0;
+			border-radius: 0;
+			height: 8px;
+			width: 20px;
+			background: var(--dots-colour);
+			opacity: 0.25;
+		}
+	}
+
+	&.slick-active button:before {
+		opacity: 1;
+	}
+}
